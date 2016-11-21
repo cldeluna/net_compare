@@ -25,10 +25,11 @@ Network utility script to compare a list of IP addresses to a list of networks a
 ###net_csv_file requires:
 - a header row
 - a "net" column that holds the network id
-- a "mast" column that holds the network mask in dotted notation
+- a "mask" column that holds the network mask in dotted notation
 all other columns are optional
 blank lines (emtpy net field) are ignored
 
+	
 	net	mask	network	name	site_code	use_typ	logical_data	-	VL	vlan	region
 	10.72.253.16	255.255.255.248	10.0.0.0	AUP-SLAN-Firewall_HSRP_VIP-VL21	AUP	SLAN	Firewall_HSRP_VIP	-	VL	21	APAC
 	10.72.254.0	255.255.255.192	10.0.0.0	AUP-SLAN-Mgmt_VLAN-VL99	AUP	SLAN	Mgmt_VLAN	-	VL	99	APAC
@@ -38,12 +39,14 @@ blank lines (emtpy net field) are ignored
 								-	VL		
 	10.72.253.8	255.255.255.252	10.0.0.0	AUP-SLAN-Connected_To_VPN_Router_Gi0_2-VL0	AUP	SLAN	Connected_To_VPN_Router_Gi0_2	-	VL	0	APAC
 
+
 ###ip_csv_file requires:
 - a header row
 - an "ip" column that holds the ip address
 all other columns are optional
 blank lines (emtpy ip field) are ignored
 
+	
 	ip
 	10.72.253.19
 	10.72.254.2
@@ -51,6 +54,7 @@ blank lines (emtpy ip field) are ignored
 	10.72.129.251
 
 	10.72.130.251
+
 
 
 ##Installation
