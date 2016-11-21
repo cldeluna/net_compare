@@ -65,7 +65,7 @@ blank lines (emtpy ip field) are ignored
 
 ##Installation
 
-This script requires the following modules:
+This script requires python 2.7 the following modules:
 - sys
 - csv
 - argparse
