@@ -68,57 +68,57 @@ Currently the script outputs to stdout (the screen normally).
 ++ lines indicate a match between IP and Network list
 -- lines indicate an IP address without a matching Network
 
-Loading CSV file qip-net-all.csv as a List of Dictionaries
-Number of Networks Loaded: 92
-Loading CSV file qip-bulk-all.csv as a List of Dictionaries
-Number of IPs Loaded: 301
-Loading CSV file cidr.csv CIDR Mapping 
-####### IP Lookup ########
-++IP Address 10.72.253.19 is in Network 10.72.253.16/29
-++IP Address 10.72.254.2 is in Network 10.72.254.0/26
-++IP Address 10.72.128.251 is in Network 10.72.128.0/24
-++IP Address 10.72.129.251 is in Network 10.72.129.0/24
-++IP Address 10.72.130.251 is in Network 10.72.130.0/24
-++IP Address 10.72.255.254 is in Network 10.72.255.0/24
-++IP Address 10.72.253.10 is in Network 10.72.253.8/30
-++IP Address 10.72.253.49 is in Network 10.72.253.48/30
-++IP Address 10.72.253.33 is in Network 10.72.253.32/30
-++IP Address 10.72.253.66 is in Network 10.72.253.64/30
-++IP Address 10.72.253.2 is in Network 10.72.253.0/30
-++IP Address 10.72.253.53 is in Network 10.72.253.52/30
-++IP Address 10.72.253.37 is in Network 10.72.253.36/30
-++IP Address 10.72.253.74 is in Network 10.72.253.72/30
-++IP Address 10.72.253.20 is in Network 10.72.253.16/29
-++IP Address 10.72.254.3 is in Network 10.72.254.0/26
-++IP Address 10.72.128.252 is in Network 10.72.128.0/24
-++IP Address 10.72.129.252 is in Network 10.72.129.0/24
-++IP Address 10.72.130.252 is in Network 10.72.130.0/24
-++IP Address 10.72.255.253 is in Network 10.72.255.0/24
-++IP Address 10.72.253.14 is in Network 10.72.253.12/30
-++IP Address 10.72.253.57 is in Network 10.72.253.56/30
-++IP Address 10.72.253.45 is in Network 10.72.253.44/30
-++IP Address 10.72.253.70 is in Network 10.72.253.68/30
-++IP Address 10.72.253.6 is in Network 10.72.253.4/30
-++IP Address 10.72.253.62 is in Network 10.72.253.60/30
-++IP Address 10.72.253.41 is in Network 10.72.253.40/30
-++IP Address 10.72.253.78 is in Network 10.72.253.76/30
-**--IP Address 202.191.223.123 is  NOT FOUND in ANY NETWORK!!!**
-++IP Address 10.72.253.13 is in Network 10.72.253.12/30
-++IP Address 10.72.253.9 is in Network 10.72.253.8/30
-++IP Address 10.72.255.250 is in Network 10.72.255.0/24
-++IP Address 10.26.50.202 is in Network 10.26.50.200/30
-++IP Address 10.72.253.27 is in Network 10.72.253.24/29
-++IP Address 172.22.128.251 is in Network 172.22.128.0/24
-++IP Address 172.22.129.251 is in Network 172.22.129.0/24
-++IP Address 172.22.130.251 is in Network 172.22.130.0/24
-++IP Address 172.22.131.251 is in Network 172.22.131.0/24
-++IP Address 172.22.132.251 is in Network 172.22.132.0/24
-++IP Address 172.22.133.251 is in Network 172.22.133.0/24
-++IP Address 172.22.134.251 is in Network 172.22.134.0/24
-++IP Address 10.72.255.252 is in Network 10.72.255.0/24
-**--IP Address 4.4.4.1 is  NOT FOUND in ANY NETWORK!!!**
-++IP Address 10.72.253.28 is in Network 10.72.253.24/29
-++IP Address 172.22.128.252 is in Network 172.22.128.0/24
+	Loading CSV file qip-net-all.csv as a List of Dictionaries
+	Number of Networks Loaded: 92
+	Loading CSV file qip-bulk-all.csv as a List of Dictionaries
+	Number of IPs Loaded: 301
+	Loading CSV file cidr.csv CIDR Mapping 
+	####### IP Lookup ########
+	++IP Address 10.72.253.19 is in Network 10.72.253.16/29
+	++IP Address 10.72.254.2 is in Network 10.72.254.0/26
+	++IP Address 10.72.128.251 is in Network 10.72.128.0/24
+	++IP Address 10.72.129.251 is in Network 10.72.129.0/24
+	++IP Address 10.72.130.251 is in Network 10.72.130.0/24
+	++IP Address 10.72.255.254 is in Network 10.72.255.0/24
+	++IP Address 10.72.253.10 is in Network 10.72.253.8/30
+	++IP Address 10.72.253.49 is in Network 10.72.253.48/30
+	++IP Address 10.72.253.33 is in Network 10.72.253.32/30
+	++IP Address 10.72.253.66 is in Network 10.72.253.64/30
+	++IP Address 10.72.253.2 is in Network 10.72.253.0/30
+	++IP Address 10.72.253.53 is in Network 10.72.253.52/30
+	++IP Address 10.72.253.37 is in Network 10.72.253.36/30
+	++IP Address 10.72.253.74 is in Network 10.72.253.72/30
+	++IP Address 10.72.253.20 is in Network 10.72.253.16/29
+	++IP Address 10.72.254.3 is in Network 10.72.254.0/26
+	++IP Address 10.72.128.252 is in Network 10.72.128.0/24
+	++IP Address 10.72.129.252 is in Network 10.72.129.0/24
+	++IP Address 10.72.130.252 is in Network 10.72.130.0/24
+	++IP Address 10.72.255.253 is in Network 10.72.255.0/24
+	++IP Address 10.72.253.14 is in Network 10.72.253.12/30
+	++IP Address 10.72.253.57 is in Network 10.72.253.56/30
+	++IP Address 10.72.253.45 is in Network 10.72.253.44/30
+	++IP Address 10.72.253.70 is in Network 10.72.253.68/30
+	++IP Address 10.72.253.6 is in Network 10.72.253.4/30
+	++IP Address 10.72.253.62 is in Network 10.72.253.60/30
+	++IP Address 10.72.253.41 is in Network 10.72.253.40/30
+	++IP Address 10.72.253.78 is in Network 10.72.253.76/30
+	**--IP Address 202.191.223.123 is  NOT FOUND in ANY NETWORK!!!**
+	++IP Address 10.72.253.13 is in Network 10.72.253.12/30
+	++IP Address 10.72.253.9 is in Network 10.72.253.8/30
+	++IP Address 10.72.255.250 is in Network 10.72.255.0/24
+	++IP Address 10.26.50.202 is in Network 10.26.50.200/30
+	++IP Address 10.72.253.27 is in Network 10.72.253.24/29
+	++IP Address 172.22.128.251 is in Network 172.22.128.0/24
+	++IP Address 172.22.129.251 is in Network 172.22.129.0/24
+	++IP Address 172.22.130.251 is in Network 172.22.130.0/24
+	++IP Address 172.22.131.251 is in Network 172.22.131.0/24
+	++IP Address 172.22.132.251 is in Network 172.22.132.0/24
+	++IP Address 172.22.133.251 is in Network 172.22.133.0/24
+	++IP Address 172.22.134.251 is in Network 172.22.134.0/24
+	++IP Address 10.72.255.252 is in Network 10.72.255.0/24
+	**--IP Address 4.4.4.1 is  NOT FOUND in ANY NETWORK!!!**
+	++IP Address 10.72.253.28 is in Network 10.72.253.24/29
+	++IP Address 172.22.128.252 is in Network 172.22.128.0/24
 
 
 
