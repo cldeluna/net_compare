@@ -29,14 +29,14 @@ Network utility script to compare a list of IP addresses to a list of networks a
 all other columns are optional
 blank lines (emtpy net field) are ignored
 
-net	mask	network	name	site_code	use_typ	logical_data	-	VL	vlan	region
-10.72.253.16	255.255.255.248	10.0.0.0	AUP-SLAN-Firewall_HSRP_VIP-VL21	AUP	SLAN	Firewall_HSRP_VIP	-	VL	21	APAC
-10.72.254.0	255.255.255.192	10.0.0.0	AUP-SLAN-Mgmt_VLAN-VL99	AUP	SLAN	Mgmt_VLAN	-	VL	99	APAC
-10.72.128.0	255.255.255.0	10.0.0.0	AUP-SLAN-HS_WL_User_VDC_1-VL1128	AUP	SLAN	HS_WL_User_VDC_1	-	VL	1128	APAC
-10.72.129.0	255.255.255.0	10.0.0.0	AUP-SLAN-HS_WL_User2_VDC_1-VL1129	AUP	SLAN	HS_WL_User2_VDC_1	-	VL	1129	APAC
-10.72.130.0	255.255.255.0	10.0.0.0	AUP-SLAN-HS_WL_Guest_VDC_1-VL1130	AUP	SLAN	HS_WL_Guest_VDC_1	-	VL	1130	APAC
-							-	VL		
-10.72.253.8	255.255.255.252	10.0.0.0	AUP-SLAN-Connected_To_VPN_Router_Gi0_2-VL0	AUP	SLAN	Connected_To_VPN_Router_Gi0_2	-	VL	0	APAC
+	net	mask	network	name	site_code	use_typ	logical_data	-	VL	vlan	region
+	10.72.253.16	255.255.255.248	10.0.0.0	AUP-SLAN-Firewall_HSRP_VIP-VL21	AUP	SLAN	Firewall_HSRP_VIP	-	VL	21	APAC
+	10.72.254.0	255.255.255.192	10.0.0.0	AUP-SLAN-Mgmt_VLAN-VL99	AUP	SLAN	Mgmt_VLAN	-	VL	99	APAC
+	10.72.128.0	255.255.255.0	10.0.0.0	AUP-SLAN-HS_WL_User_VDC_1-VL1128	AUP	SLAN	HS_WL_User_VDC_1	-	VL	1128	APAC
+	10.72.129.0	255.255.255.0	10.0.0.0	AUP-SLAN-HS_WL_User2_VDC_1-VL1129	AUP	SLAN	HS_WL_User2_VDC_1	-	VL	1129	APAC
+	10.72.130.0	255.255.255.0	10.0.0.0	AUP-SLAN-HS_WL_Guest_VDC_1-VL1130	AUP	SLAN	HS_WL_Guest_VDC_1	-	VL	1130	APAC
+								-	VL		
+	10.72.253.8	255.255.255.252	10.0.0.0	AUP-SLAN-Connected_To_VPN_Router_Gi0_2-VL0	AUP	SLAN	Connected_To_VPN_Router_Gi0_2	-	VL	0	APAC
 
 ###ip_csv_file requires:
 - a header row
@@ -44,13 +44,13 @@ net	mask	network	name	site_code	use_typ	logical_data	-	VL	vlan	region
 all other columns are optional
 blank lines (emtpy ip field) are ignored
 
-ip
-10.72.253.19
-10.72.254.2
-10.72.128.251
-10.72.129.251
+	ip
+	10.72.253.19
+	10.72.254.2
+	10.72.128.251
+	10.72.129.251
 
-10.72.130.251
+	10.72.130.251
 
 
 ##Installation
