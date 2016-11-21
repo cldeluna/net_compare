@@ -1,7 +1,7 @@
 # net_compare
 
 ##Synopsis
-Network untility script to compare a list of IP addresses to a list of networks and determine matches and misses.
+Network utility script to compare a list of IP addresses to a list of networks and determine matches and misses.
 
 
 	>python net_compare.py -h
