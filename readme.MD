@@ -26,8 +26,11 @@ Network utility script to compare a list of IP addresses to a list of networks a
 - a header row
 - a "net" column that holds the network id
 - a "mask" column that holds the network mask in dotted notation
+
 all other columns are optional
+
 blank lines (emtpy net field) are ignored
+
 
 	
 	net	mask	network	name	site_code	use_typ	logical_data	-	VL	vlan	region
@@ -43,8 +46,11 @@ blank lines (emtpy net field) are ignored
 ###ip_csv_file requires:
 - a header row
 - an "ip" column that holds the ip address
+
 all other columns are optional
+
 blank lines (emtpy ip field) are ignored
+
 
 	
 	ip
