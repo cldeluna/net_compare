@@ -102,7 +102,7 @@ Currently the script outputs to stdout (the screen normally).
 	++IP Address 10.72.253.62 is in Network 10.72.253.60/30
 	++IP Address 10.72.253.41 is in Network 10.72.253.40/30
 	++IP Address 10.72.253.78 is in Network 10.72.253.76/30
-	**--IP Address 202.191.223.123 is  NOT FOUND in ANY NETWORK!!!**
+	--IP Address 202.191.223.123 is  NOT FOUND in ANY NETWORK!!!
 	++IP Address 10.72.253.13 is in Network 10.72.253.12/30
 	++IP Address 10.72.253.9 is in Network 10.72.253.8/30
 	++IP Address 10.72.255.250 is in Network 10.72.255.0/24
@@ -116,7 +116,7 @@ Currently the script outputs to stdout (the screen normally).
 	++IP Address 172.22.133.251 is in Network 172.22.133.0/24
 	++IP Address 172.22.134.251 is in Network 172.22.134.0/24
 	++IP Address 10.72.255.252 is in Network 10.72.255.0/24
-	**--IP Address 4.4.4.1 is  NOT FOUND in ANY NETWORK!!!**
+	--IP Address 4.4.4.1 is  NOT FOUND in ANY NETWORK!!!
 	++IP Address 10.72.253.28 is in Network 10.72.253.24/29
 	++IP Address 172.22.128.252 is in Network 172.22.128.0/24
 
