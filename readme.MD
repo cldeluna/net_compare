@@ -81,10 +81,14 @@ This script requires python 2.7 the following modules:
 The script will log to stdout as well as to a time stamped file named "net_compare_run-*timestamp*.log" in the local directory.  The log contains a line for each comparison and will conclude with an "Error Report Summary" listing IPs without subnets and subnets without IP objects.
 
 
-	Timestamp: 2016-11-22 04:07:22
+	Timestamp: 2016-11-22 05:41:53
 
 	Processing Network CSV file: qip-net-all.csv
+	Number of Networks Loaded: 93
+
 	Processing IP Address CSV file: qip-bulk-all.csv
+	Number of IP Addresses Loaded: 301
+
 
 	####### IP Lookup for Matching Subnet ########
 	++IP Address 10.72.253.19 is in Network 10.72.253.16/29

@@ -98,7 +98,9 @@ def main():
 
     log_file.write("Timestamp: " + str(start_time) + "\n")
     log_file.write("\nProcessing Network CSV file: " + arguments.net_csv_file + "\n")
+    log_file.write("Number of Networks Loaded: " + str(len(net_list)) + "\n\n")
     log_file.write("Processing IP Address CSV file: " + arguments.ip_csv_file + "\n")
+    log_file.write("Number of IP Addresses Loaded: " + str(len(ip_list)) + "\n\n")
 
     # Lookup up each IP in the IP list and see if there is a match in the subnet list
     print '####### IP Lookup for Matching Subnet ########'
