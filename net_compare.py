@@ -172,6 +172,10 @@ def main():
         print line
         log_file.write(line + "\n")
 
+    total_errors = "\nTotal Number of Errors: " + str(len(mia_report))
+    print total_errors
+    log_file.write(total_errors + "\n")
+
     log_file.close()
 
 # Standard call to the main() function.

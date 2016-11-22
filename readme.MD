@@ -504,3 +504,6 @@ The script will log to stdout as well as to a time stamped file named "net_compa
 	ERROR: No Network: --IP Address 202.191.223.121 is  NOT FOUND in ANY NETWORK!!!
 	ERROR: No Objects: Network 99.99.99.0/24 has **NO** (0) IP Address objects!
 
+	Total Number of Errors: 12
+
+	
