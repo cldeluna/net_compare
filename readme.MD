@@ -73,6 +73,7 @@ This script requires python 2.7 the following modules:
 - csv
 - argparse
 - netaddr
+- time
 
 
 ##Output
