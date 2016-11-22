@@ -72,6 +72,7 @@ def load_cidr_lookup(filename):
 def main():
 
     found_network_dict = {}
+    mia_report = []
 
     # Open CSV File of Networks
     filename = arguments.net_csv_file
@@ -87,8 +88,8 @@ def main():
     filename = 'cidr.csv'
     cidr_dict = load_cidr_lookup(filename)
 
-
-    print '####### IP Lookup ########'
+    # Lookup up each IP in the IP list and see if there is a match in the subnet list
+    print '####### IP Lookup for Matching Subnet ########'
     for ips in ip_list:
         ip_is_in_net = False
         ipaddr = ips['ip']
@@ -106,7 +107,47 @@ def main():
         if ip_is_in_net:
             print "++IP Address {} is in Network {}".format(ipaddr, found_network_dict[ipaddr])
         else:
-            print "--IP Address {} is  NOT FOUND in ANY NETWORK!!!".format(ipaddr)
+            msg = "ERROR: No Network: --IP Address " + ipaddr + " is  NOT FOUND in ANY NETWORK!!!"
+            print msg
+            mia_report.append(msg)
+
+
+    # Lookup each subnet and see if there is at least one object
+    print '/n/n####### At least one Object per Subnet ########'
+    foundobj_innet = {}
+    for nets in net_list:
+        list_of_ips = []
+        obj_in_net = False
+        network = nets['net']
+        netmask = nets['mask']
+        netbits = cidr_dict[netmask]
+        cidr_notation = network + "/" + netbits
+
+        for ips in ip_list:
+
+            ipaddr = ips['ip']
+
+            if netaddr.IPAddress(ipaddr) in netaddr.IPNetwork(cidr_notation):
+                obj_in_net = True
+                list_of_ips.append(ipaddr)
+                foundobj_innet[cidr_notation] = list_of_ips
+
+        if not obj_in_net:
+            foundobj_innet[cidr_notation] = []
+
+
+    for k,v in foundobj_innet.items():
+        if len(v) > 0:
+            print "Network {} has {} IP Address objects".format(k,str(len(v)))
+        else:
+            msg = "ERROR: No Objects: Network " + k + " has **NO** (" + str(len(v)) + ") IP Address objects!"
+            print msg
+            mia_report.append(msg)
+
+    print "\n\n############### ERROR Report Summary ###############"
+    for line in mia_report:
+        print line
+
 
 # Standard call to the main() function.
 if __name__ == '__main__':
