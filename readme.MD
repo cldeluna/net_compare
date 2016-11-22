@@ -78,7 +78,7 @@ This script requires python 2.7 the following modules:
 
 ##Output
 
-The script will log to stdout as well as to a time stamped file named "net_compare_run-<timestamp>.log" in the local directory.  The log contains a line for each comparison and will conclude with an "Error Report Summary" listing IPs without subnets and subnets without IP objects.
+The script will log to stdout as well as to a time stamped file named "net_compare_run-*timestamp*.log" in the local directory.  The log contains a line for each comparison and will conclude with an "Error Report Summary" listing IPs without subnets and subnets without IP objects.
 
 
 	Timestamp: 2016-11-22 04:07:22
