@@ -12,6 +12,7 @@ import sys
 import csv
 import argparse
 import netaddr
+import time
 
 
 def load_csv(filename,empty_row_key):
@@ -88,8 +89,20 @@ def main():
     filename = 'cidr.csv'
     cidr_dict = load_cidr_lookup(filename)
 
+    # Create a Log file
+    start_time = time.strftime("%Y-%m-%d %H:%M:%S")
+    filename_base = "net_compare_run"
+    timestr = time.strftime("%Y%m%d-%H%M%S")
+    log_filename = filename_base + "-" + timestr + ".log"
+    log_file = open(log_filename, 'w')
+
+    log_file.write("Timestamp: " + str(start_time) + "\n")
+    log_file.write("\nProcessing Network CSV file: " + arguments.net_csv_file + "\n")
+    log_file.write("Processing IP Address CSV file: " + arguments.ip_csv_file + "\n")
+
     # Lookup up each IP in the IP list and see if there is a match in the subnet list
     print '####### IP Lookup for Matching Subnet ########'
+    log_file.write('\n####### IP Lookup for Matching Subnet ########\n')
     for ips in ip_list:
         ip_is_in_net = False
         ipaddr = ips['ip']
@@ -105,15 +118,19 @@ def main():
                 pass
 
         if ip_is_in_net:
-            print "++IP Address {} is in Network {}".format(ipaddr, found_network_dict[ipaddr])
+            msg = "++IP Address " + ipaddr + " is in Network " + found_network_dict[ipaddr]
+            print msg
+            log_file.write(msg + "\n")
         else:
             msg = "ERROR: No Network: --IP Address " + ipaddr + " is  NOT FOUND in ANY NETWORK!!!"
             print msg
+            log_file.write(msg + "\n")
             mia_report.append(msg)
 
 
     # Lookup each subnet and see if there is at least one object
-    print '/n/n####### At least one Object per Subnet ########'
+    print '\n\n####### At least one Object per Subnet ########'
+    log_file.write('\n\n####### At least one Object per Subnet ########\n')
     foundobj_innet = {}
     for nets in net_list:
         list_of_ips = []
@@ -138,16 +155,22 @@ def main():
 
     for k,v in foundobj_innet.items():
         if len(v) > 0:
-            print "Network {} has {} IP Address objects".format(k,str(len(v)))
+            msg = "Network " + k + " has " + str(len(v)) + " IP Address objects"
+            print msg
+            log_file.write(msg + "\n")
         else:
             msg = "ERROR: No Objects: Network " + k + " has **NO** (" + str(len(v)) + ") IP Address objects!"
             print msg
+            log_file.write(msg + "\n")
             mia_report.append(msg)
 
     print "\n\n############### ERROR Report Summary ###############"
+    log_file.write("\n\n############### ERROR Report Summary ###############\n")
     for line in mia_report:
         print line
+        log_file.write(line + "\n")
 
+    log_file.close()
 
 # Standard call to the main() function.
 if __name__ == '__main__':
